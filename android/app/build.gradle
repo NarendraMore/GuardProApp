@@ -1,0 +1,60 @@
+plugins {
+    id "com.android.application"
+    id "kotlin-android"
+    // The Flutter Gradle Plugin must be applied after the Android and Kotlin Gradle plugins.
+    id "dev.flutter.flutter-gradle-plugin"
+}
+
+android {
+    namespace = "com.example.homesecurity"
+    compileSdk = 34 // Use the highest SDK version your app supports (Android 14 is the latest, but Android 13 is API level 33)
+
+    ndkVersion = flutter.ndkVersion
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_1_8
+    }
+
+    defaultConfig {
+        applicationId = "com.example.homesecurity"
+        minSdk = 21 // Minimum SDK version supported; adjust if necessary based on your app's requirements.
+        targetSdk = 33 // Set to 33 for Android 13.
+        versionCode = 1
+        versionName = "1.0"
+    }
+
+    buildTypes {
+        release {
+            signingConfig = signingConfigs.debug // Replace with your own release signing config
+            minifyEnabled true // Enable code shrinking for release
+            shrinkResources true // Resource shrinking enabled
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            minifyEnabled false // Code shrinking disabled in debug mode
+            shrinkResources false // Resource shrinking disabled in debug mode
+        }
+    }
+
+    packagingOptions {
+        pickFirst '**/*.so'
+        exclude 'META-INF/*.kotlin_module'
+    }
+}
+
+flutter {
+    source = "../.."
+}
+
+// Optional: Dependencies for Android 13 compatibility
+dependencies {
+    // Ensure you have the latest AndroidX libraries for support on Android 13.
+    implementation "androidx.core:core-ktx:1.10.0"
+    implementation "androidx.appcompat:appcompat:1.6.1"
+    // If you use any other AndroidX libraries, make sure they are compatible with Android 13.
+}

@@ -1,0 +1,12 @@
+E:/homesecurity/build/windows/x64/runner/Debug/data/icudtl.dat
+E:/homesecurity/build/windows/x64/runner/Debug/flutter_windows.dll
+E:/homesecurity/build/windows/x64/runner/Debug/data/flutter_assets/AssetManifest.bin
+E:/homesecurity/build/windows/x64/runner/Debug/data/flutter_assets/AssetManifest.json
+E:/homesecurity/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/bg.jpg
+E:/homesecurity/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/logo.png
+E:/homesecurity/build/windows/x64/runner/Debug/data/flutter_assets/FontManifest.json
+E:/homesecurity/build/windows/x64/runner/Debug/data/flutter_assets/fonts/MaterialIcons-Regular.otf
+E:/homesecurity/build/windows/x64/runner/Debug/data/flutter_assets/kernel_blob.bin
+E:/homesecurity/build/windows/x64/runner/Debug/data/flutter_assets/NOTICES.Z
+E:/homesecurity/build/windows/x64/runner/Debug/data/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf
+E:/homesecurity/build/windows/x64/runner/Debug/data/flutter_assets/shaders/ink_sparkle.frag
